@@ -1,2 +1,2 @@
 language = "bash"
-run = 'bundler exec jekyll s -s "docs"'
+run = 'bundler exec jekyll s -s "docs" -H 0.0.0.0'

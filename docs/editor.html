@@ -1,0 +1,42 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<style>
+		body {
+			margin: 0;
+			background-color: #012;
+			color: #CEF;
+		}
+
+		.panel {
+			float: left;
+			border: solid 1px;
+			width: 70%;
+			height: 99%;
+		}
+
+		.panel.right {
+			width: 28%;
+		}
+
+    span.panel {
+      display: block;
+    }
+	</style>
+	<script src='https://meet.jit.si/external_api.js'></script>
+</head>
+
+<body>
+	<iframe class="panel left" src="https://replit.com/@ceilingrat/multiplayer-experiments-1?embed=true"></iframe>
+	<span class="panel right"></span>
+  <script>
+    var oMeetOptions = {
+      height : "100%",
+      parentNode : document.querySelector("span.panel.right"),
+      roomName : "SMB3-ceilingrat"
+    };
+    var oMeetAPI = new JitsiMeetExternalAPI( "meet.jit.si", oMeetOptions);
+  </script>
+  </body>
+</html>
